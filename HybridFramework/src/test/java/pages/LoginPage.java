@@ -15,10 +15,10 @@ public class LoginPage {
 
 		driver.findElement(By.id(reuse.readProperties("username"))).sendKeys(reuse.readExcel(0, 0));
 		driver.findElement(By.id(reuse.readProperties("password"))).sendKeys(reuse.readExcel(0, 1));
-		reuse.getScreenshot(driver,"INVALID_LOGIN");
+		//reuse.getScreenshot(driver,"INVALID_LOGIN");
 		driver.findElement(By.id(reuse.readProperties("submitButton"))).click();
 		
-		//System.out.println("Login successful");
+		
 	}
 
 }
